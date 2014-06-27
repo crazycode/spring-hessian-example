@@ -1,0 +1,11 @@
+Excessivly simple example for using Hessian for Spring (3.0.7) Bean Remoting.
+
+Two applications: Server and Client.
+
+The Server exposes a simple service (called Service) on localhost:10000/remoting/Service, using Hessian 3.1.5. It is implemented using Spring's DispatcherServlet mapped in web.xml, with the bean and the actual remoting configuration in remoting-servlet.xml.
+
+The Client is a cli application that simply logs the result from calling the remote bean.
+
+Common interfaces and DOM are collected in the commons project, which will have to be available for either of the two applications to be built.
+
+From: https://github.com/hholmste/spring-remoting-example
